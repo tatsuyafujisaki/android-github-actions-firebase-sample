@@ -20,4 +20,4 @@ jobs:
       - run: danger
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # DANGER_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }} // necessary only if you use a bot account.
+          DANGER_GITHUB_API_TOKEN: ${{ secrets.DANGER_GITHUB_API_TOKEN }} // necessary only if you use a bot account.

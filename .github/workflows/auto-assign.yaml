@@ -1,0 +1,9 @@
+on: pull_request
+
+jobs:
+  auto-assign:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: toshimaru/auto-author-assign@v1.1.1
+        with:
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"

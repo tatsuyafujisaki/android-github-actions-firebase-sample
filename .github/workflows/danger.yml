@@ -15,7 +15,7 @@ jobs:
       - run: |
           gem install bundler
           bundle install
-      - run: danger
+      - run: bundle exec danger
         env:
           # Use the following if you want a bot account.
           DANGER_GITHUB_API_TOKEN: ${{ secrets.DANGER_GITHUB_API_TOKEN }} // A bot account's personal access token that has full access to repo.
